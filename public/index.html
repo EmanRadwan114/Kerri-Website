@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerri Website</title>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awsome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- main css file link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="box-border font-Nunito">
+    <!-- start of fixed btns -->
+    <div class="fixed-btns">
+      <!-- start of spin setting btn on the left -->
+      <div
+        class="fixed start-0 top-40 cursor-pointer rounded-sm bg-gray-900 p-2 text-white"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-6 w-6 animate-[spin_2s_infinite_linear]"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692a1.875 1.875 0 00-.432 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.57.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.891-1.59.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348l-.179-1.072a1.875 1.875 0 00-1.85-1.567h-1.843zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <!-- end of spin setting btn on the left -->
+
+      <!-- start of back to top btn -->
+      <div
+        class="fixed bottom-4 end-4 cursor-pointer rounded-sm bg-primary p-1 text-white"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <!-- end of back to top btn -->
+    </div>
+    <!-- end of fixed btns -->
+
+    <!-- start of navbar -->
+    <header>
+      <nav class="fixed z-50 w-full bg-white text-black shadow-md">
+        <div
+          class="container px-4 py-2 md:max-w-3xl md:py-5 lg:max-w-5xl xl:max-w-6xl"
+        >
+          <div class="relative flex items-center justify-between">
+            <div class="brand-logp">
+              <a href="index.html" class="text-3xl font-extrabold"> Kerri </a>
+            </div>
+            <div class="menu-btn cursor-pointer lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-8 w-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+            <div
+              class="nav-links absolute start-0 top-[150%] hidden lg:static lg:block"
+            >
+              <ul class="flex flex-col gap-x-8 lg:flex-row">
+                <li>
+                  <a href="#home" class="capitalize text-primary">Home</a>
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="capitalize transition duration-500 hover:text-primary"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="capitalize transition duration-500 hover:text-primary"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#client"
+                    class="capitalize transition duration-500 hover:text-primary"
+                    >client</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="capitalize transition duration-500 hover:text-primary"
+                    >portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#blog"
+                    class="capitalize transition duration-500 hover:text-primary"
+                    >blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="capitalize transition duration-500 hover:text-primary"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end of navbar -->
+
+    <!-- start of hero section -->
+    <section
+      id="home"
+      class="h-screen w-full bg-[url(../images/header-bg.jpg)] bg-cover bg-center bg-no-repeat"
+    >
+      <div
+        class="layer flex h-screen w-full items-center justify-center bg-[rgba(0,0,0,0.7)] text-center text-white"
+      >
+        <div
+          class="container px-4 py-2 md:max-w-3xl md:py-5 lg:max-w-5xl xl:max-w-6xl"
+        >
+          <div class="hero-content">
+            <span
+              class="text[17px] mb-5 inline-block font-Montserrat font-semibold md:mb-7 md:text-xl lg:text-2xl"
+            >
+              Welcome
+            </span>
+            <h1
+              class="hero-title mb-6 w-full font-Montserrat text-[1.5rem] font-semibold uppercase after:mb-[-8px] after:inline-block after:w-0 after:max-w-fit after:animate-[borderColor_1s_alternate-reverse_infinite] after:animate-[typing_12s_steps(15)_infinite_backwards] after:overflow-hidden after:whitespace-nowrap after:border-e-4 after:border-white after:content-[''] md:mb-8 md:text-4xl lg:text-5xl"
+            >
+              i'm a
+            </h1>
+            <p class="mx-auto mb-11 text-base/8 text-gray-300 lg:max-w-lg">
+              It is a long established fact that a reader will be of a page when
+              established fact looking at its layout.
+            </p>
+            <div class="hero-btn relative">
+              <a
+                href="#"
+                class="rounded-full border-2 border-white px-8 py-4 font-semibold uppercase transition duration-700 hover:bg-white hover:text-black"
+                >download cv</a
+              >
+              <div>
+                <span
+                  class="absolute -bottom-[160px] start-[50%] h-11 w-7 -translate-x-1/2 animate-[bounce_700ms_infinite] rounded-full border-2 border-white after:absolute after:bottom-2 after:start-[50%] after:h-3 after:w-1 after:-translate-x-1/2 after:bg-white after:content-['']"
+                >
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of hero section -->
+
+    <!-- start of about section -->
+    <section id="about" class="py-20">
+      <div
+        class="container px-4 py-2 md:max-w-3xl md:py-5 lg:max-w-5xl xl:max-w-6xl"
+      >
+        <div
+          class="flex flex-col items-start justify-between gap-7 lg:flex-row"
+        >
+          <div class="lg:w-1/2">
+            <img
+              src="./images/about.jpg"
+              alt="Kerri Doe Photo"
+              class="w-full rounded-sm border border-gray-300 p-1"
+            />
+          </div>
+          <div class="lg:w-1/2">
+            <h2
+              class="mb-5 font-Montserrat text-3xl font-bold capitalize text-gray-800"
+            >
+              about <span class="font-medium">me</span>
+            </h2>
+            <p
+              class="mb-5 font-Montserrat text-2xl font-semibold capitalize text-gray-800"
+            >
+              hello!
+              <span class="capitalize text-primary"> I'M Kerri Deo. </span>
+            </p>
+            <p class="mb-5 text-gray-500">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+
+              <br /><br />
+              The point of using Lorem Ipsum is that it has a more-or-less
+              normal distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. <br /><br />
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour, or randomised words which don't look even
+              slightly believable.
+            </p>
+            <div class="social-icons flex items-center gap-3 text-gray-800">
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-gray-300 transition-colors duration-500 hover:border-primary hover:text-primary"
+              >
+                <i class="fa-brands fa-dribbble text-lg"></i>
+              </div>
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-gray-300 transition-colors duration-500 hover:border-primary hover:text-primary"
+              >
+                <i class="fa-brands fa-facebook-f text-lg"></i>
+              </div>
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-gray-300 transition-colors duration-500 hover:border-primary hover:text-primary"
+              >
+                <i class="fa-brands fa-linkedin-in text-lg"></i>
+              </div>
+              <div
+                class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-2 border-gray-300 transition-colors duration-500 hover:border-primary hover:text-primary"
+              >
+                <i class="fa-brands fa-twitter text-lg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of about section -->
+
+    <!-- start of services section -->
+    <section id="services" class="text-center">
+      <div class="sec-overlay bg-gray-50 py-20">
+        <div
+          class="container px-4 py-2 md:max-w-3xl md:py-5 lg:max-w-5xl xl:max-w-6xl"
+        >
+          <div class="services-content">
+            <div class="sec-header mb-24">
+              <h2
+                class="mb-5 font-Montserrat text-3xl font-bold capitalize text-gray-800"
+              >
+                <span class="font-medium">our</span> services
+              </h2>
+              <p
+                class="mx-auto mb-5 font-Nunito text-gray-500 md:w-4/5 lg:w-1/2"
+              >
+                It is a long established fact that a reader will be of a page
+                when established fact looking at its layout.
+              </p>
+            </div>
+            <div
+              class="services-cards flex flex-wrap items-center justify-between gap-6"
+            >
+              <div
+                class="single-card group border border-gray-200 p-10 md:w-[calc(50%-24px)] lg:w-[calc(33.33%-24px)]"
+              >
+                <div class="card-icon mb-4 text-3xl text-primary">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="card-content">
+                  <h3
+                    class="relative mb-5 pb-3 font-Montserrat text-xl font-bold capitalize text-gray-800 after:absolute after:-bottom-1 after:start-1/2 after:block after:w-12 after:-translate-x-1/2 after:border-b-[4px] after:border-primary after:transition-all after:duration-700 after:content-[''] group-hover:after:w-24"
+                  >
+                    Graphic Design
+                  </h3>
+                  <p class="font-Nunito">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="single-card group border border-gray-200 p-10 md:w-[calc(50%-24px)] lg:w-[calc(33.33%-24px)]"
+              >
+                <div class="card-icon mb-4 text-3xl text-primary">
+                  <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <div class="card-content">
+                  <h3
+                    class="relative mb-5 pb-3 font-Montserrat text-xl font-bold capitalize text-gray-800 after:absolute after:-bottom-1 after:start-1/2 after:block after:w-12 after:-translate-x-1/2 after:border-b-[4px] after:border-primary after:transition-all after:duration-700 after:content-[''] group-hover:after:w-24"
+                  >
+                    Unlimited Color
+                  </h3>
+                  <p class="font-Nunito">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="single-card group border border-gray-200 p-10 md:w-[calc(50%-24px)] lg:w-[calc(33.33%-24px)]"
+              >
+                <div class="card-icon mb-4 text-3xl text-primary">
+                  <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <div class="card-content">
+                  <h3
+                    class="relative mb-5 pb-3 font-Montserrat text-xl font-bold capitalize text-gray-800 after:absolute after:-bottom-1 after:start-1/2 after:block after:w-12 after:-translate-x-1/2 after:border-b-[4px] after:border-primary after:transition-all after:duration-700 after:content-[''] group-hover:after:w-24"
+                  >
+                    Media Marketing
+                  </h3>
+                  <p class="font-Nunito">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="single-card group border border-gray-200 p-10 md:w-[calc(50%-24px)] lg:w-[calc(33.33%-24px)]"
+              >
+                <div class="card-icon mb-4 text-3xl text-primary">
+                  <i class="fa-solid fa-copy"></i>
+                </div>
+                <div class="card-content">
+                  <h3
+                    class="relative mb-5 pb-3 font-Montserrat text-xl font-bold capitalize text-gray-800 after:absolute after:-bottom-1 after:start-1/2 after:block after:w-12 after:-translate-x-1/2 after:border-b-[4px] after:border-primary after:transition-all after:duration-700 after:content-[''] group-hover:after:w-24"
+                  >
+                    Unlimited Wifi
+                  </h3>
+                  <p class="font-Nunito">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="single-card group border border-gray-200 p-10 md:w-[calc(50%-24px)] lg:w-[calc(33.33%-24px)]"
+              >
+                <div class="card-icon mb-4 text-3xl text-primary">
+                  <i class="fa-solid fa-display"></i>
+                </div>
+                <div class="card-content">
+                  <h3
+                    class="relative mb-5 pb-3 font-Montserrat text-xl font-bold capitalize text-gray-800 after:absolute after:-bottom-1 after:start-1/2 after:block after:w-12 after:-translate-x-1/2 after:border-b-[4px] after:border-primary after:transition-all after:duration-700 after:content-[''] group-hover:after:w-24"
+                  >
+                    Responsive Design
+                  </h3>
+                  <p class="font-Nunito">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="single-card group border border-gray-200 p-10 md:w-[calc(50%-24px)] lg:w-[calc(33.33%-24px)]"
+              >
+                <div class="card-icon mb-4 text-3xl text-primary">
+                  <i class="fa-regular fa-note-sticky"></i>
+                </div>
+                <div class="card-content">
+                  <h3
+                    class="relative mb-5 pb-3 font-Montserrat text-xl font-bold capitalize text-gray-800 after:absolute after:-bottom-1 after:start-1/2 after:block after:w-12 after:-translate-x-1/2 after:border-b-[4px] after:border-primary after:transition-all after:duration-700 after:content-[''] group-hover:after:w-24"
+                  >
+                    Easy to customize
+                  </h3>
+                  <p class="font-Nunito">
+                    There are many variations of passages of but the majority
+                    have suffered alteration in some form.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- start of hire me section -->
+      <section id="hire" class="bg-white py-20">
+        <div
+          class="container px-4 py-2 md:max-w-3xl md:py-5 lg:max-w-5xl xl:max-w-6xl"
+        >
+          <div class="hire-content">
+            <h2
+              class="mb-9 font-Montserrat text-2xl font-semibold capitalize md:text-3xl"
+            >
+              I Am Available For Freelancer.
+            </h2>
+            <a
+              href="#"
+              class="cursor-pointer rounded-[4px] border-none bg-primary px-9 py-4 font-Nunito text-sm uppercase text-white transition-colors duration-300 hover:bg-primaryDark"
+              >hire me!</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- end of hire me section -->
+    </section>
+    <!-- end of services section -->
+
+    <!-- start of client section -->
+    <section id="client" class="bg-gray-50 py-20 text-center">
+      <div
+        class="container px-4 py-2 md:max-w-3xl md:py-5 lg:max-w-5xl xl:max-w-6xl"
+      >
+        <div class="testimonials-content">
+          <div class="sec-header mb-16">
+            <h2
+              class="mb-5 font-Montserrat text-3xl font-bold capitalize text-gray-800"
+            >
+              <span class="font-medium">our</span> clients
+            </h2>
+            <p class="mx-auto mb-5 font-Nunito text-gray-500 md:w-4/5 lg:w-1/2">
+              It is a long established fact that a reader will be of a page when
+              established fact looking at its layout.
+            </p>
+          </div>
+          <div
+            class="testimonial relative flex flex-col items-center justify-center gap-4"
+          >
+            <div class="quote-icon mb-5 text-4xl text-primary">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div class="client-img w-15">
+              <img
+                src="./images/testi-3.jpg"
+                class="w-full rounded-full border-2 border-gray-200 bg-white p-1"
+                alt="ebony verty photo"
+              />
+            </div>
+            <div class="client-review italic md:w-2/3">
+              <p class="font-Nunito text-lg font-medium text-gray-500">
+                " The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here."
+              </p>
+            </div>
+            <div class="client-title">
+              <h3 class="font-Nunito capitalize">
+                ebony verty, <span class="font-bold">envato</span>
+              </h3>
+            </div>
+            <div
+              class="carousel-indicators absolute -bottom-10 start-1/2 -translate-x-1/2"
+            >
+              <span
+                class="inline-block h-1.5 w-5 cursor-pointer rounded-lg bg-primary"
+              ></span>
+              <span
+                class="inline-block h-1.5 w-3.5 cursor-pointer rounded-lg bg-primary bg-opacity-50"
+              ></span>
+              <span
+                class="inline-block h-1.5 w-3.5 cursor-pointer rounded-lg bg-primary bg-opacity-50"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of client section -->
+
+    <!-- start of portfolio section -->
+    <section id="portfolio" class="py-20 text-center">
+      <div
+        class="container px-4 py-2 md:max-w-3xl md:py-5 lg:max-w-5xl xl:max-w-6xl"
+      >
+        <div class="portfolio-content">
+          <div class="sec-header mb-16">
+            <h2
+              class="mb-5 font-Montserrat text-3xl font-bold capitalize text-gray-800"
+            >
+              <span class="font-medium">our</span> works
+            </h2>
+            <p class="mx-auto mb-5 font-Nunito text-gray-500 md:w-4/5 lg:w-1/2">
+              It is a long established fact that a reader will be of a page when
+              established fact looking at its layout.
+            </p>
+          </div>
+          <div class="portfolio-gallery">
+            <div class="navs mb-10">
+              <button
+                class="mb-3 me-1 cursor-pointer rounded-2xl bg-primary px-4 py-1 font-Nunito text-sm font-semibold uppercase text-white"
+              >
+                all
+              </button>
+              <button
+                class="mb-3 me-1 cursor-pointer rounded-2xl px-4 py-1 font-Nunito text-sm font-semibold uppercase transition-colors duration-300 hover:bg-primary hover:text-white"
+              >
+                seo
+              </button>
+              <button
+                class="mb-3 me-1 cursor-pointer rounded-2xl px-4 py-1 font-Nunito text-sm font-semibold uppercase transition-colors duration-300 hover:bg-primary hover:text-white"
+              >
+                web design
+              </button>
+              <button
+                class="mb-3 me-1 cursor-pointer rounded-2xl px-4 py-1 font-Nunito text-sm font-semibold uppercase transition-colors duration-300 hover:bg-primary hover:text-white"
+              >
+                work
+              </button>
+              <button
+                class="mb-3 me-1 cursor-pointer rounded-2xl px-4 py-1 font-Nunito text-sm font-semibold uppercase transition-colors duration-300 hover:bg-primary hover:text-white"
+              >
+                wordpress
+              </button>
+            </div>
+            <div
+              class="portfolio-imgs flex flex-wrap items-center justify-between gap-5"
+            >
+              <div
+                class="single-img group relative cursor-pointer md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]"
+              >
+                <img
+                  src="./images/1.jpg"
+                  class="w-full rounded-md"
+                  alt="product item"
+                />
+                <div
+                  class="img-layer absolute bottom-0 start-0 flex h-0 w-full items-center justify-center rounded-md bg-[rgba(0,0,0,0.7)] opacity-0 transition-all duration-300 group-hover:h-full group-hover:opacity-100"
+                >
+                  <div class="layer-content">
+                    <span
+                      class="font-Nunito text-base font-semibold capitalize text-gray-400"
+                      >category</span
+                    >
+                    <h3
+                      class="font-Montserrat text-xl font-semibold capitalize text-white"
+                    >
+                      product title
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="single-img group relative cursor-pointer rounded-md md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]"
+              >
+                <img
+                  src="./images/2.jpg"
+                  class="w-full rounded-md"
+                  alt="product item"
+                />
+                <div
+                  class="img-layer absolute bottom-0 start-0 flex h-0 w-full items-center justify-center rounded-md bg-[rgba(0,0,0,0.7)] opacity-0 transition-all duration-300 group-hover:h-full group-hover:opacity-100"
+                >
+                  <div class="layer-content">
+                    <span
+                      class="font-Nunito text-base font-semibold capitalize text-gray-400"
+                      >category</span
+                    >
+                    <h3
+                      class="font-Montserrat text-xl font-semibold capitalize text-white"
+                    >
+                      product title
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="single-img group relative cursor-pointer rounded-md md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]"
+              >
+                <img
+                  src="./images/3.jpg"
+                  class="w-full rounded-md"
+                  alt="product item"
+                />
+                <div
+                  class="img-layer absolute bottom-0 start-0 flex h-0 w-full items-center justify-center rounded-md bg-[rgba(0,0,0,0.7)] opacity-0 transition-all duration-300 group-hover:h-full group-hover:opacity-100"
+                >
+                  <div class="layer-content">
+                    <span
+                      class="font-Nunito text-base font-semibold capitalize text-gray-400"
+                      >category</span
+                    >
+                    <h3
+                      class="font-Montserrat text-xl font-semibold capitalize text-white"
+                    >
+                      product title
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="single-img group relative cursor-pointer rounded-md md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]"
+              >
+                <img
+                  src="./images/4.jpg"
+                  class="w-full rounded-md"
+                  alt="product item"
+                />
+                <div
+                  class="img-layer absolute bottom-0 start-0 flex h-0 w-full items-center justify-center rounded-md bg-[rgba(0,0,0,0.7)] opacity-0 transition-all duration-300 group-hover:h-full group-hover:opacity-100"
+                >
+                  <div class="layer-content">
+                    <span
+                      class="font-Nunito text-base font-semibold capitalize text-gray-400"
+                      >category</span
+                    >
+                    <h3
+                      class="font-Montserrat text-xl font-semibold capitalize text-white"
+                    >
+                      product title
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="single-img group relative cursor-pointer rounded-md md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]"
+              >
+                <img
+                  src="./images/5.jpg"
+                  class="w-full rounded-md"
+                  alt="product item"
+                />
+                <div
+                  class="img-layer absolute bottom-0 start-0 flex h-0 w-full items-center justify-center rounded-md bg-[rgba(0,0,0,0.7)] opacity-0 transition-all duration-300 group-hover:h-full group-hover:opacity-100"
+                >
+                  <div class="layer-content">
+                    <span
+                      class="font-Nunito text-base font-semibold capitalize text-gray-400"
+                      >category</span
+                    >
+                    <h3
+                      class="font-Montserrat text-xl font-semibold capitalize text-white"
+                    >
+                      product title
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="single-img group relative cursor-pointer rounded-md md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]"
+              >
+                <img
+                  src="./images/6.jpg"
+                  class="w-full rounded-md"
+                  alt="product item"
+                />
+                <div
+                  class="img-layer absolute bottom-0 start-0 flex h-0 w-full items-center justify-center rounded-md bg-[rgba(0,0,0,0.7)] opacity-0 transition-all duration-300 group-hover:h-full group-hover:opacity-100"
+                >
+                  <div class="layer-content">
+                    <span
+                      class="font-Nunito text-base font-semibold capitalize text-gray-400"
+                      >category</span
+                    >
+                    <h3
+                      class="font-Montserrat text-xl font-semibold capitalize text-white"
+                    >
+                      product title
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of portfolio section -->
+
+    <!-- start of blog section -->
+    <section id="blog" class="bg-gray-50 py-20 text-center">
+      <div
+        class="container px-4 py-2 md:max-w-3xl md:py-5 lg:max-w-5xl xl:max-w-6xl"
+      >
+        <div class="blog-content">
+          <div class="sec-header mb-20">
+            <h2
+              class="mb-5 font-Montserrat text-3xl font-bold capitalize text-gray-800"
+            >
+              <span class="font-medium">our</span> blog
+            </h2>
+            <p class="mx-auto mb-5 font-Nunito text-gray-500 md:w-4/5 lg:w-1/2">
+              It is a long established fact that a reader will be of a page when
+              established fact looking at its layout.
+            </p>
+          </div>
+          <div
+            class="blog-items flex flex-wrap items-center justify-between gap-5"
+          >
+            <div
+              class="single-blog rounded-md bg-white p-2 text-start md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]"
+            >
+              <div class="blog-img mb-3">
+                <img
+                  src="./images/blog-2.jpg"
+                  class="w-full rounded-md"
+                  alt="blog featured imags"
+                />
+              </div>
+              <div class="blog-desc px-4 pb-4">
+                <h3
+                  class="mb-3 cursor-pointer font-Montserrat text-lg font-semibold capitalize"
+                >
+                  There are many variations
+                </h3>
+                <span class="mb-3 block font-Nunito text-gray-500"
+                  >11 March 2018
+                  <a href="#" class="font-Nunito font-bold text-primary"
+                    >By Kerri</a
+                  ></span
+                >
+                <p class="mb-3 font-Nunito text-gray-500">
+                  Sit sagittis vulputate laoreet sodales tortor nulla lobortis
+                  bibendum netus primis fames. Lobortis ultricies.
+                </p>
+                <a
+                  href="#"
+                  class="font-Nunito text-base font-bold capitalize text-gray-500"
+                  >read more...</a
+                >
+              </div>
+            </div>
+            <div
+              class="single-blog rounded-md bg-white p-2 text-start md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]"
+            >
+              <div class="blog-img mb-3">
+                <img
+                  src="./images/blog-3.jpg"
+                  class="w-full rounded-md"
+                  alt="blog featured imags"
+                />
+              </div>
+              <div class="blog-desc px-4 pb-4">
+                <h3
+                  class="mb-3 cursor-pointer font-Montserrat text-lg font-semibold capitalize"
+                >
+                  Contrary to popular belief
+                </h3>
+                <span class="mb-3 block font-Nunito text-gray-500"
+                  >11 March 2018
+                  <a href="#" class="font-Nunito font-bold text-primary"
+                    >By Kerri</a
+                  ></span
+                >
+                <p class="mb-3 font-Nunito text-gray-500">
+                  Sit sagittis vulputate laoreet sodales tortor nulla lobortis
+                  bibendum netus primis fames. Lobortis ultricies.
+                </p>
+                <a
+                  href="#"
+                  class="font-Nunito text-base font-bold capitalize text-gray-500"
+                  >read more...</a
+                >
+              </div>
+            </div>
+            <div
+              class="single-blog rounded-md bg-white p-2 text-start md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]"
+            >
+              <div class="blog-img mb-3">
+                <img
+                  src="./images/blog-2.jpg"
+                  class="w-full rounded-md"
+                  alt="blog featured imags"
+                />
+              </div>
+              <div class="blog-desc px-4 pb-4">
+                <h3
+                  class="mb-3 cursor-pointer font-Montserrat text-lg font-semibold capitalize"
+                >
+                  Lorem Ipsum is not simply
+                </h3>
+                <span class="mb-3 block font-Nunito text-gray-500"
+                  >11 March 2018
+                  <a href="#" class="font-Nunito font-bold text-primary"
+                    >By Kerri</a
+                  ></span
+                >
+                <p class="mb-3 font-Nunito text-gray-500">
+                  Sit sagittis vulputate laoreet sodales tortor nulla lobortis
+                  bibendum netus primis fames. Lobortis ultricies.
+                </p>
+                <a
+                  href="#"
+                  class="font-Nunito text-base font-bold capitalize text-gray-500"
+                  >read more...</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of blog section -->
+
+    <!-- start of contact section -->
+    <section id="contact" class="py-20 text-center">
+      <div
+        class="container px-4 py-2 md:max-w-3xl md:py-5 lg:max-w-5xl xl:max-w-6xl"
+      >
+        <div class="contact-content">
+          <div class="sec-header mb-16">
+            <h2
+              class="mb-5 font-Montserrat text-3xl font-bold capitalize text-gray-800"
+            >
+              contact
+              <span class="font-medium">us</span>
+            </h2>
+            <p class="mx-auto mb-5 font-Nunito text-gray-500 md:w-4/5 lg:w-1/2">
+              It is a long established fact that a reader will be of a page when
+              established fact looking at its layout.
+            </p>
+          </div>
+          <div
+            class="contact-items mb-20 flex flex-wrap items-center justify-center gap-5"
+          >
+            <div class="single-item lg:w-[calc(33.33%-20px)]">
+              <div class="contact-icon mb-3 text-4xl text-primary">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <div class="contact-details">
+                <h3 class="mb-0.5 font-Montserrat text-xl font-semibold">
+                  Call Us On
+                </h3>
+                <p class="font-Nunito text-gray-500">+985 123 7856</p>
+              </div>
+            </div>
+            <div class="single-item lg:w-[calc(33.33%-20px)]">
+              <div class="contact-icon mb-3 text-4xl text-primary">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3 class="mb-0.5 font-Montserrat text-xl font-semibold">
+                  Email Us At
+                </h3>
+                <p class="font-Nunito text-gray-500">Website.Kerri@gmail.com</p>
+              </div>
+            </div>
+            <div class="single-item lg:w-[calc(33.33%-20px)]">
+              <div class="contact-icon mb-3 text-4xl text-primary">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-details">
+                <h3 class="mb-0.5 font-Montserrat text-xl font-semibold">
+                  Visit Office
+                </h3>
+                <p class="font-Nunito text-gray-500">
+                  202, Grasselli Street , Conway.
+                </p>
+              </div>
+            </div>
+          </div>
+          <form
+            action="post"
+            class="flex flex-wrap items-center justify-start gap-5 text-left"
+          >
+            <div class="form-item w-full font-Nunito lg:w-[calc(50%-10px)]">
+              <input
+                type="text"
+                name="full_name"
+                placeholder="Your name..."
+                required
+                class="block w-full border-2 border-gray-300 px-3 py-2.5 text-gray-900 placeholder:text-gray-500 focus:outline-primary"
+              />
+            </div>
+            <div class="form-item w-full font-Nunito lg:w-[calc(50%-10px)]">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email..."
+                required
+                class="block w-full border-2 border-gray-300 px-3 py-2.5 text-gray-900 placeholder:text-gray-500 focus:outline-primary"
+              />
+            </div>
+            <div class="form-item w-full font-Nunito">
+              <input
+                type="text"
+                name="subject"
+                placeholder="Your subject..."
+                class="block w-full border-2 border-gray-300 px-3 py-2.5 text-gray-900 placeholder:text-gray-500 focus:outline-primary"
+              />
+            </div>
+            <div class="form-item w-full font-Nunito">
+              <textarea
+                name="message"
+                placeholder="Your message..."
+                rows="4"
+                class="block w-full border-2 border-gray-300 px-3 py-2.5 text-gray-900 placeholder:text-gray-500 focus:outline-primary"
+              ></textarea>
+            </div>
+            <div class="form-item ms-auto">
+              <button
+                class="cursor-pointer rounded-[4px] border-none bg-primary px-9 py-4 font-Nunito text-sm font-bold uppercase text-white transition-colors duration-300 hover:bg-primaryDark"
+                type="submit"
+              >
+                send message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end of contact section -->
+
+    <!-- start of footer -->
+    <footer class="bg-neutral-800 py-10 text-center text-neutral-400">
+      <div
+        class="container px-4 py-2 md:max-w-3xl md:py-5 lg:max-w-5xl xl:max-w-6xl"
+      >
+        <div class="footer-icons mb-7 flex items-center justify-center gap-3">
+          <div
+            class="icon group flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-neutral-700"
+          >
+            <i
+              class="fa-brands fa-facebook-f text-lg transition-colors duration-500 group-hover:text-primary"
+            ></i>
+          </div>
+          <div
+            class="icon group flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-neutral-700"
+          >
+            <i
+              class="fa-brands fa-linkedin-in text-lg transition-colors duration-500 group-hover:text-primary"
+            ></i>
+          </div>
+          <div
+            class="icon group flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-neutral-700"
+          >
+            <i
+              class="fa-brands fa-pinterest-p text-lg transition-colors duration-500 group-hover:text-primary"
+            ></i>
+          </div>
+          <div
+            class="icon group flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-neutral-700"
+          >
+            <i
+              class="fa-brands fa-twitter text-lg transition-colors duration-500 group-hover:text-primary"
+            ></i>
+          </div>
+        </div>
+        <p class="capitalize">2018 - 2021 &copy; Kerri. Design by SRBThemes.</p>
+      </div>
+    </footer>
+    <!-- end of footer -->
+  </body>
+</html>
